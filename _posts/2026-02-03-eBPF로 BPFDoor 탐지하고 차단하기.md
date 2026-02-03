@@ -10,7 +10,7 @@ tags: [ebpf, xdp, bpfdoor, linux]
 
 **BPFDoor**는 BPF(Berkeley Packet Filter)를 악용하는 리눅스 백도어입니다. 
 
-우리나라에서는 2025년 4월 발생한 [대형 통신사 유심 정보 유출 사고](https://namu.wiki/w/SK%ED%85%94%EB%A0%88%EC%BD%A4%20%EC%9C%A0%EC%8B%AC%20%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%20%EC%82%AC%EA%B3%A0)에 사용된 해킹 도구로 알려져 있습니다.
+우리나라에서는 2025년 4월 발생한 **대형 통신사 유심 정보 유출 사고**에 사용된 해킹 도구로 알려져 있습니다.
 
 
 
@@ -272,6 +272,10 @@ $ tcpdump -i eth1 -nn 'udp and port 29269' -X
 
 ### 4.3 Case 2: Defender 활성화 (공격 차단)
 
+> 💡 **Note**  
+> **BPFDoor-Defender** 전체 소스 코드는 <br/>
+> [GitHub - kimmap/ebpf-bpfdoor-defender](https://github.com/kimmap/ebpf-bpfdoor-defender)에서 확인할 수 있습니다.
+<br/>
 #### Step 1: eBPF 프로그램 컴파일
 
 ```bash
