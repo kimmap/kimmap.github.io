@@ -242,7 +242,13 @@ $ ./bpfdoor --init
 
 **[Attacker] 공격 실행:**
 
-> **Note**: 공격 프로그램(`bpfdoor_attacker`)은 테스트 목적으로 별도 작성하였으며, 악용 위험이 있어 공개하지 않습니다.
+
+>💡 **Note**  
+> 공격 프로그램(`bpfdoor_attacker`)은 테스트 목적으로 별도 작성하였으며, <br/>
+> 악용 위험이 있어 공개하지 않습니다.
+
+<br/><br/>
+
 
 ```bash
 $ ./bpfdoor_attacker --target-ip 192.168.57.100
@@ -275,7 +281,9 @@ $ tcpdump -i eth1 -nn 'udp and port 29269' -X
 > 💡 **Note**  
 > **BPFDoor-Defender** 전체 소스 코드는 <br/>
 > [GitHub - kimmap/ebpf-bpfdoor-defender](https://github.com/kimmap/ebpf-bpfdoor-defender)에서 확인할 수 있습니다.
-<br/>
+
+<br/><br/>
+
 #### Step 1: eBPF 프로그램 컴파일
 
 ```bash
