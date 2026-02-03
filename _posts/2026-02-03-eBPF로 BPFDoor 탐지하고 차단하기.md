@@ -30,11 +30,10 @@ tags: [ebpf, xdp, bpfdoor, linux]
 <br/><br/>
 
 > 💡 **Note**  
-> 이 글에서 다루는 **BPFDoor-Defender** 전체 소스 코드는 <br/>
-> [GitHub - kimmap/ebpf-bpfdoor-defender](https://github.com/kimmap/ebpf-bpfdoor-defender)에서 확인할 수 있습니다.
-<br/><br/>
+> 이 글에서 다루는 **BPFDoor-Defender** 전체 소스 코드는 [GitHub - kimmap/ebpf-bpfdoor-defender](https://github.com/kimmap/ebpf-bpfdoor-defender)에서 확인할 수 있습니다.
 
-<br/><br/>
+<br/>
+
 ## 1. BPFDoor 동작 원리
 
 ### 1.1 전체 아키텍처
@@ -244,10 +243,9 @@ $ ./bpfdoor --init
 
 
 >💡 **Note**  
-> 공격 프로그램(`bpfdoor_attacker`)은 테스트 목적으로 별도 작성하였으며, <br/>
-> 악용 위험이 있어 공개하지 않습니다.
+> 공격 프로그램(`bpfdoor_attacker`)은 테스트 목적으로 별도 작성하였으며, 악용 위험이 있어 공개하지 않습니다.
 
-<br/><br/>
+<br/>
 
 
 ```bash
@@ -279,10 +277,9 @@ $ tcpdump -i eth1 -nn 'udp and port 29269' -X
 ### 4.3 Case 2: Defender 활성화 (공격 차단)
 
 > 💡 **Note**  
-> **BPFDoor-Defender** 전체 소스 코드는 <br/>
-> [GitHub - kimmap/ebpf-bpfdoor-defender](https://github.com/kimmap/ebpf-bpfdoor-defender)에서 확인할 수 있습니다.
+> **BPFDoor-Defender** 전체 소스 코드는 [GitHub - kimmap/ebpf-bpfdoor-defender](https://github.com/kimmap/ebpf-bpfdoor-defender)에서 확인할 수 있습니다.
 
-<br/><br/>
+<br/>
 
 #### Step 1: eBPF 프로그램 컴파일
 
